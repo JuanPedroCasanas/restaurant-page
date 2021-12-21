@@ -1,0 +1,43 @@
+@font-face {
+  font-family: titleFont;
+  src: url(/dist/assets/titleFont.ttf);
+}
+
+body{
+  background-color: rgb(131, 158, 207);
+}
+
+#content{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2em 2em;
+  row-gap: 3em;
+}
+
+.title {
+  color: rgb(229, 255, 0);
+  font-size: 1.8em;
+  font-family: titleFont;
+}
+
+.logo{
+  width: 5em;
+  height: 5em;
+  padding: 3em;
+  border-radius: 33%;
+  background-color: rgb(89, 128, 201);
+}
+
+.navbar{
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 1em;
+}
+
+button{
+  width: 10em;
+}

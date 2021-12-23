@@ -41,3 +41,8 @@ body{
 button{
   width: 10em;
 }
+
+.homeImg{
+  width: 40em;
+  height: 40em;
+}

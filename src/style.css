@@ -46,3 +46,27 @@ button{
   width: 40em;
   height: 40em;
 }
+
+.menuItems{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  column-gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.menuItem{
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 20em;
+  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemImg{
+  height: 10em;
+  width: 10em;
+}

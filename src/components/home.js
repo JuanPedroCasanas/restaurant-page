@@ -1,7 +1,7 @@
 import { clearPage } from './clearPage';
 
 export function renderHome(){
-  clearPage();
+  clearPage('home');
   const content = document.getElementById('content');
   const home = document.createElement('div');
   const homeTitle = document.createElement('p');
@@ -9,7 +9,7 @@ export function renderHome(){
   const homeImg = document.createElement('img');
   const homeImgCaption = document.createElement('figcaption');
 
-  home.classList.add('currentContent');
+  home.classList.add('home');
   homeTitle.classList.add('homeTitle')
   homeFig.classList.add('homeFig')
   homeImg.classList.add('homeImg')

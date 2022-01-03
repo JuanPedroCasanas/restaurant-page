@@ -12,10 +12,11 @@ export function renderContact(){
   address.classList.add('address');
   phone.classList.add('phone');
   contact.classList.add('contact');
+  contact.classList.add('animatedRender');
 
   map.src = './assets/map.png';
-  address.textContent = 'Blanco Crossing';
-  phone.textContent = '555-3750';
+  address.textContent = 'Address: Blanco Crossing';
+  phone.textContent = 'Phone: 555-3750';
 
   contact.appendChild(map);
   contact.appendChild(address);

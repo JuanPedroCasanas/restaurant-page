@@ -19,6 +19,7 @@ export function renderMenu() {
     ('Rocket & tomatoes pizza', '/assets/rocketPizza.png', 'pizza pizza'));
 
   menu.classList.add('menu');
+  menu.classList.add('animatedRender');
   menuTitle.classList.add('menuTitle');
   menuItems.classList.add('menuItems');
 

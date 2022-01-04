@@ -33,8 +33,8 @@ export function renderHome() {
 
   homeFig.appendChild(homeImg);
   homeFig.appendChild(homeImgCaption);
-
   home.appendChild(homeTitle);
   home.appendChild(homeFig);
+  
   content.appendChild(home);
 }

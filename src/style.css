@@ -8,14 +8,18 @@ body{
   background-repeat: no-repeat;
   background-size: 140%;
   background-position-x: 74% ;
-  background-position-y: 5%;
+  overflow: hidden;
 }
 
 #content{
+  margin-top: 1.5em;
+  justify-content: center;
+  align-content: center;
+  transition: 1s;
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3em 2em;
+  grid-template-rows:4em 1em 1fr;
   row-gap: 1em;
 }
 
@@ -24,6 +28,19 @@ body{
   text-shadow: black 2px 2px 1px;
   font-size: 1.8em;
   font-family: titleFont;
+}
+
+.introPage{
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle{
+  font-size: 9em;
 }
 
 .logo{
@@ -35,6 +52,7 @@ body{
 }
 
 .navbar{
+  opacity: 1;
   justify-self: center;
   align-self: center;
   display: grid;
@@ -44,6 +62,8 @@ body{
 }
 
 button{
+  transition: 0.3s;
+  text-align: center;
   width: 10em;
   font-size: 1.05em;
   border: none;
@@ -52,6 +72,23 @@ button{
   font-weight: bolder;
   border-radius: 5%;
   background-color:rgba(255, 255, 0, 0.636);
+}
+
+#enterButton{
+  justify-self: center;
+  align-self: center;
+  font-size: 2em;
+  width: 5em;
+  height: 100%;
+  border-radius: 0% 20% 20% 0%;
+}
+
+button:hover{
+  transition: 0.3s;
+  cursor: pointer;
+  background-color:rgb(255, 255, 0);
+  color: black;
+  text-shadow: none;
 }
 
 /*/Home/*/
@@ -75,7 +112,6 @@ button{
 .homeFig{
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .homeImg{
@@ -99,18 +135,22 @@ button{
 .menu{
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-shadow: black 1px 1px 1px;
-  align-items: center;
+  text-align: center;
 }
 
 .menuTitle{
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
 .menuItems{
+  padding-top: 0.5em;
+  justify-self: center;
+  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1em;
@@ -124,8 +164,8 @@ button{
   font-weight: bolder;
   display: flex;
   flex-direction: column;
-  width: 20em;
-  height: 20em;
+  width: 15em;
+  height: 15em;
   border: 3px solid gold;
   border-radius: 5%;
   justify-content: center;
@@ -134,8 +174,14 @@ button{
 }
 
 .itemImg{
-  height: 10em;
-  width: 10em;
+  height: 9em;
+  width: 9em;
+}
+
+.itemDescription{
+  text-shadow: none;
+  font-weight: 400;
+  font-size: 0.95em;
 }
 
 /*/Contact/*/
@@ -147,14 +193,14 @@ button{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-shadow: black 1px 1px 1px;
-  font-size: 2em;
+  font-size: 1.5em;
+  margin-top: 1em;
 }
 
 .map{
   border: 2px solid gold;
   border-radius: 5%;
-  width: 30em;
-  height: 25em;
+  width: 25em;
 }
 
 /*/About Us/*/
@@ -163,9 +209,7 @@ button{
   width: 30em;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-}
-
-.aboutUsTxt{
+  margin-top: 1em;
 }
 
 .aboutUsImg{

@@ -1,7 +1,5 @@
 import './style.css'
-import { renderTitle } from './components/title.js';
-import { renderNavbar } from './components/navbar';
-
+import { renderIntroPage } from './components/introPage';
 const content = document.getElementById('content');
-content.appendChild(renderTitle());
-content.appendChild(renderNavbar());
+
+content.appendChild(renderIntroPage());

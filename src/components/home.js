@@ -17,7 +17,7 @@ export function renderHome() {
   homeImgCaption.classList.add('homeImgCaption');
 
   homeTitle.textContent = 'The best pizzas in town, since 1973';
-  homeImg.src = '/assets/homeImg.jpg';
+  homeImg.src = './assets/homeImg.jpg';
   homeImgCaption.innerHTML = 'Lorem ipsum dolor sit amet, consectetur' +
     'adipiscing elit. Quisque dignissim est vel diam efficitur porttitor. Curabitur' +
     'congue in quam a rhoncus. Mauris gravida sit amet ex ut scelerisque.' +

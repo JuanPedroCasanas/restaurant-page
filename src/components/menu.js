@@ -10,13 +10,13 @@ export function renderMenu() {
   const menuArray = [];
 
   menuArray.push(menuItemCreator
-    ('Cheese Pizza', '/assets/cheesePizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
+    ('Cheese Pizza', './assets/cheesePizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
   menuArray.push(menuItemCreator
-    ('Pepperoni Pizza', '/assets/pepperoniPizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
+    ('Pepperoni Pizza', './assets/pepperoniPizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
   menuArray.push(menuItemCreator
-    ('Meat & Olives Pizza', '/assets/meatOlivePizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
+    ('Meat & Olives Pizza', './assets/meatOlivePizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
   menuArray.push(menuItemCreator
-    ('Rocket & tomatoes pizza', '/assets/rocketPizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
+    ('Rocket & tomatoes pizza', './assets/rocketPizza.png', 'Lorem ipsum dolor sit amet, consectetur'));
 
   menu.classList.add('menu');
   menu.classList.add('animatedRender');
